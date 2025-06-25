@@ -10,7 +10,9 @@
     "lint:fix": "next lint --fix",
     "format": "prettier --write \"./**/*.{js,mjs,jsx,ts,tsx,json,css,scss,md}\"",
     "format:check": "prettier --check \"./**/*.{js,mjs,jsx,ts,tsx,json,css,scss,md}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "type-check": "tsc --noEmit",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "next": "15.3.4",
@@ -28,6 +30,7 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.5.1",
     "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.1",
     "tailwindcss": "^4",
     "typescript": "^5"
