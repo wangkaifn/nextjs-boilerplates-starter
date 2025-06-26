@@ -13,7 +13,12 @@
     "prepare": "husky",
     "type-check": "tsc --noEmit",
     "commitlint": "commitlint --edit",
-    "commit": "cz"
+    "commit": "cz",
+    "release": "release-it",
+    "release:patch": "release-it patch",
+    "release:minor": "release-it minor",
+    "release:major": "release-it major",
+    "release:dry": "release-it --dry-run"
   },
   "dependencies": {
     "next": "15.3.4",
@@ -24,6 +29,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/eslintrc": "^3",
+    "@release-it/conventional-changelog": "^10.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -38,6 +44,8 @@
     "inquirer": "^9.3.7",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.1",
+    "release-it": "^19.0.3",
+    "release-it-pnpm": "^4.6.6",
     "tailwindcss": "^4",
     "typescript": "^5"
   },

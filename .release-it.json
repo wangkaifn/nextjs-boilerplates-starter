@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/release-it/release-it/main/config/release-it.json",
+  "git": {
+    "requireBranch": "main",
+    "requireCleanWorkingDir": true,
+    "addUntrackedFiles": false,
+    "commit": true,
+    "commitMessage": "chore(release): v${version}",
+    "tag": true,
+    "tagName": "v${version}",
+    "tagAnnotation": "Release v${version}",
+    "push": true,
+    "pushRepo": "origin",
+    "pushArgs": ["--follow-tags"]
+  },
+  "github": {
+    "release": false
+  },
+  "npm": {
+    "publish": false,
+    "skipChecks": true
+  },
+  "hooks": {
+    "before:init": ["pnpm run lint", "pnpm run type-check", "pnpm run build"]
+  },
+  "plugins": {
+    "release-it-pnpm": {
+      "publishAll": false,
+      "skipChecks": true
+    },
+    "@release-it/conventional-changelog": {
+      "preset": "angular",
+      "infile": "CHANGELOG.md"
+    }
+  }
+}

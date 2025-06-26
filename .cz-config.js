@@ -22,26 +22,28 @@ module.exports = {
 
   // scope 类型（定义之后，可通过上下键选择）
   scopes: [
-    { name: "components" },
-    { name: "pages" },
-    { name: "api" },
-    { name: "layout" },
-    { name: "hooks" },
-    { name: "utils" },
-    { name: "styles" },
-    { name: "types" },
-    { name: "config" },
-    { name: "middleware" },
-    { name: "ui" },
-    { name: "assets" },
-    { name: "deps" },
-    { name: "auth" },
-    { name: "i18n" },
-    { name: "seo" },
-    { name: "tests" },
-    { name: "docs" },
-    { name: "build" },
-    { name: "other" }
+    {
+      name: "components" // 组件
+    },
+    { name: "pages" }, // 页面相关（Next.js 页面）
+    { name: "api" }, // API 相关
+    { name: "layout" }, // 布局相关
+    { name: "hooks" }, // 钩子
+    { name: "utils" }, // 工具函数
+    { name: "styles" }, // 样式
+    { name: "types" }, // 类型
+    { name: "config" }, // 配置
+    { name: "middleware" }, // 中间件
+    { name: "ui" }, // UI 组件
+    { name: "assets" }, // 资产
+    { name: "deps" }, // 依赖
+    { name: "auth" }, // 认证
+    { name: "i18n" }, // 国际化
+    { name: "seo" }, // SEO
+    { name: "tests" }, // 测试
+    { name: "docs" }, // 文档
+    { name: "build" }, // 构建
+    { name: "other" } // 其他
   ],
 
   // 覆写提示的信息
