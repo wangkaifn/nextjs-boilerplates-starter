@@ -14,12 +14,11 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
 
-
   {
     // 指定要检查的文件类型
     files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: {
-      prettier: prettierPlugin  // Prettier 集成
+      prettier: prettierPlugin // Prettier 集成
     },
     // 具体规则配置
     rules: {

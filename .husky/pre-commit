@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 npx lint-staged        # 检查暂存的文件
-#npm run type-check      # TypeScript 类型检查
+npm run type-check      # TypeScript 类型检查

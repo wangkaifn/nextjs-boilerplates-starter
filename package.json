@@ -12,7 +12,8 @@
     "format:check": "prettier --check \"./**/*.{js,mjs,jsx,ts,tsx,json,css,scss,md}\"",
     "prepare": "husky",
     "type-check": "tsc --noEmit",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "next": "15.3.4",
@@ -20,6 +21,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
