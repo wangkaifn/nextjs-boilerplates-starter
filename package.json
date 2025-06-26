@@ -1,6 +1,6 @@
 {
   "name": "nextjs-boilerplates-starter",
-  "version": "0.1.1",
+  "version": "0.1.2-beta.1",
   "description": "🏗️ 现代化 Next.js 脚手架项目 - 集成 React 19、TypeScript、Tailwind CSS v4 和完整的开发工具链",
   "private": true,
   "homepage": "https://github.com/wangkaifn/nextjs-boilerplates-starter#readme",
