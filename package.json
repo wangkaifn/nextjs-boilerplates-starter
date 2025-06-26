@@ -1,7 +1,31 @@
 {
   "name": "nextjs-boilerplates-starter",
   "version": "0.1.0",
+  "description": "🏗️ 现代化 Next.js 脚手架项目 - 集成 React 19、TypeScript、Tailwind CSS v4 和完整的开发工具链",
   "private": true,
+  "homepage": "https://github.com/wangkaifn/nextjs-boilerplates-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wangkaifn/nextjs-boilerplates-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangkaifn/nextjs-boilerplates-starter/issues"
+  },
+  "author": "wangkaifn",
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "boilerplate",
+    "starter",
+    "template",
+    "pnpm",
+    "commitizen",
+    "release-it",
+    "conventional-commits"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
